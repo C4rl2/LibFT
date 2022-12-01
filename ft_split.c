@@ -6,25 +6,53 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:40:34 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/19 17:34:47 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/01 21:01:07 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include <stdio.h>
 #include <libft.h>
 
-/*char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	int	i = 0;
-	char *str = (char *)calloc(sizeof(char), len + 1);
-	unsigned int	end = start + len;	
+//void	*ft_memset(void *b, int c, size_t len)
+//{
+//	size_t	i;
 
-	while(start < end)
-	{
-		str[i++] = s[start++];
-	}
-	return(str);
-}*/
+//	i = 0;
+//	while (i < len)
+//		((unsigned char *)b)[i++] = c;
+//	return (b);
+//}
+
+//void	ft_bzero(void *s, size_t n)
+//{
+//	ft_memset(s, 0, n);
+//}
+
+//void	*ft_calloc(size_t count, size_t size)
+//{
+//	void	*s;
+
+//	if (count >= INT_MAX || size >= INT_MAX)
+//		return (NULL);
+//	s = malloc(count * size);
+//	if (s == 0)
+//		return (NULL);
+//	ft_bzero(s, count * size);
+//	return (s);
+//}
+
+//char	*ft_substr(char const *s, unsigned int start, size_t len)
+//{
+//	int	i = 0;
+//	char *str = (char *)calloc(sizeof(char), len + 1);
+//	unsigned int	end = start + len;	
+
+//	while(start < end)
+//	{
+//		str[i++] = s[start++];
+//	}
+//	return(str);
+//}
 
 static unsigned int	ft_count_words(char const *s, char c)
 {
@@ -112,12 +140,12 @@ char	**ft_split(char const *s, char c)
 	unsigned int	len;
 
 	words = ft_count_words(s, c);
-	if (words == 0)
-		return (NULL);
 	i = 0;
 	tab = (char **)ft_calloc(sizeof(char *), words + 1);
 	if (!tab)
 		return (NULL);
+	if (words == 0)
+		return (tab);
 	while (i < words)
 	{
 		start = ft_start_word(s, c, i);
@@ -128,9 +156,10 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-/*int	main(){
-	char ** tab = ft_split("eeeeee", ' ');
-	int	i = 0;
-	for(;tab[i]; i++)
-			puts(tab[i]);
-}*/
+//int	main()
+//{
+//	char ** tab = ft_split("     ", ' ');
+//	int	i = 0;
+//	for(;tab[i]; i++)
+//			puts(tab[i]);
+//}

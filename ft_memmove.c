@@ -6,7 +6,7 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 19:14:03 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/17 14:19:29 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/01 21:05:51 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,32 @@
 //#include <stdlib.h>
 //#include <stdio.h>
 //#include <string.h>
+#include <libft.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*d;
 	char	*s;
 
-	d = (char *)dst;
-	s = (char *)src;
-	if ((d && s) == 0)
+	if ((dst && src) == 0)
 		return (0);
-	if (s < d)
+	if (src < dst)
 	{
+		d = (char *)dst + (len - 1);
+		s = (char *)src + (len - 1);
 		while (len--)
-			*d++ = *s++;
+			*d-- = *s--;
 		return (dst);
 	}
-	d = (char *)dst + (len - 1);
-	s = (char *)src + (len - 1);
-	while (len--)
-		*d-- = *s--;
-	return (dst);
+	return (ft_memcpy(dst, src, len));
 }
 
 //int main()
 //{
-//    char *str = strdup("Hello World!");
-//	char *dst = strdup("x");
-//    printf("%s\n", (char *)memmove(dst, str, 5));
-//    printf("%s\n", (char *)ft_memmove(dst, str, 5));
+//    //char *str = strdup("Hello World!");
+//	char dst[] = {67, 68, 67, 68, 69, 0, 45};
+//	char dst2[] = {67, 68, 67, 68, 69, 0, 45};
+//    printf("%s\n", (char *)memmove(dst + 1, dst, 2));
+//    printf("%s\n", (char *)ft_memmove(dst2 + 1, dst2, 2));
 //    return 0;
 //}

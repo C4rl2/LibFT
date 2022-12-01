@@ -6,7 +6,7 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 18:47:44 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/16 19:13:07 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/01 21:04:56 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,30 +18,25 @@
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
-	char	*d;
-	char	*s;
 
 	i = 0;
-	d = (char *)dst;
-	s = (char *)src;
-	while (d[i] && s[i] && i < n)
+	if (src == NULL || dst == NULL)
+		return (dst);
+	while (i < n)
 	{
-		d[i] = s[i];
+		((char *)dst)[i] = ((char *)src)[i];
 		i++;
 	}
 	return (dst);
 }
 
-/*int	main(void)
-{
-	char	*d;
-	char	*s;
-	int		n;
-	char	*f;
+//int	main(void)
+//{
+//	char	d[100];
+//	char	s[] = {0, 0};
+//	char	*f;
 
-	n = 1;
-	d = strdup("hello");
-	s = strdup("coucou");
-	f = ft_memcpy(d, s, n);
-	printf("%s\n", f);
-}*/
+//	memset(d, 'A', 100);
+//	f = ft_memcpy(d, s, 2);
+//	printf("%s\n", f);
+//}

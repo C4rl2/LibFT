@@ -6,7 +6,7 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:38:47 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/29 14:27:49 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/01 21:05:36 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 //#include <string.h>
 //#include <stdio.h>
 
-static int ft_char_in_array(char c, char const *set)
+static int	ft_char_in_array(char c, char const *set)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	while (set[i])
 	{

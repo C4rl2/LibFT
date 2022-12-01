@@ -6,7 +6,7 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 14:21:04 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/29 20:02:45 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/01 16:13:57 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,26 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
+	size_t	i;
+
+	i = 0;
 	if (dstsize == 0)
 		return (ft_strlen(src));
-	if (ft_strlen(src) == 0 || !src)
+	if (src == 0 || dst == 0)
 		return (0);
 	else
 	{
-		dst[dstsize] = '\0';
-		while ((*src == '\0') && --dstsize)
-			*dst++ = *src++;
+		if (dstsize != 0)
+		{
+			dstsize--;
+			while (dstsize != 0 && src[i] != 0)
+			{
+				dst[i] = src[i];
+				i++;
+				dstsize--;
+			}
+			dst[i] = '\0';
+		}
 		return (ft_strlen(src));
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:36:38 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/29 19:55:05 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/01 21:06:15 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ static int	ft_len(unsigned int nbr)
 
 char	*ft_itoa(int n)
 {
-	int		len;
-	int		sign;
-	char	*str;
-	unsigned int nb;
+	int				len;
+	int				sign;
+	char			*str;
+	unsigned int	nb;
 
 	sign = (n < 0);
 	if (n < 0)
