@@ -6,15 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:38:47 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/01 21:05:36 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:28:47 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-//#include <stdlib.h>
-//#include <stddef.h>
-//#include <string.h>
-//#include <stdio.h>
 
 static int	ft_char_in_array(char c, char const *set)
 {
@@ -45,10 +41,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_substr(s1, i, 0));
 	return (ft_substr(s1, i, ++j - i));
 }
-
-//int	main(void)
-//{
-//	char	*s = strdup("abcdba");
-//	char	*c = "acb";
-//	printf("%s\n", ft_strtrim(s, c));
-//}

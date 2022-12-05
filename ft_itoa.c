@@ -6,7 +6,7 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:36:38 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/01 21:06:15 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:14:04 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-//int	main(void)
-//{
-//	printf("v: %s\n", ft_itoa(42));
-//	printf("v: %s\n", ft_itoa(0));
-//	printf("v: %s\n", ft_itoa(-42));
-//}

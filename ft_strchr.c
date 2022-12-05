@@ -6,14 +6,12 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 12:30:41 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/01 16:06:09 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:22:24 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stddef.h>
-//#include <string.h>
-//#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -32,10 +30,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-
-//int	main(void)
-//{
-//	char *s = strdup("");
-//	int		c = '\0';
-//	printf("%s\n", ft_strchr(s, c));
-//}

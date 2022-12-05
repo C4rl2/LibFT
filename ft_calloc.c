@@ -6,14 +6,12 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 12:54:48 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/19 18:22:36 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:12:09 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <libft.h>
-//#include <stdio.h>
-//#include <string.h>
 #include <stdlib.h>
 #include <limits.h>
 
@@ -29,15 +27,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(s, count * size);
 	return (s);
 }
-
-/*int	main(void)
-{
-	char	*a;
-	int		i;
-
-	i = 0;
-	a = ft_calloc(sizeof(char), 6);
-	while (i < 5)
-		a[i++] = 'x';
-	printf("%s\n", a);
-}*/

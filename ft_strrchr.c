@@ -6,12 +6,10 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 12:58:32 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/26 15:25:52 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:28:30 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <string.h>
-//#include <stdio.h>
 #include <libft.h>
 
 char	*ft_strrchr(const char *s, int c)
@@ -29,10 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-//int	main(void)
-//{
-//	char *s = strdup("kkk");
-//	int		c = 'c';
-//	printf("%s\n", ft_strrchr(s, c));
-//}

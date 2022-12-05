@@ -6,11 +6,9 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 18:02:44 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/28 14:34:58 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:10:25 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <libft.h>
 
 int	ft_atoi(const char *str)
 {

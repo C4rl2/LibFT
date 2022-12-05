@@ -6,20 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 18:18:03 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/15 19:19:37 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:13:10 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_isalpha(int c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
-
-/*int	main()
-{
-	int var = ft_isalpha(' ');
-	//puts(var);
-    printf("%d\n", var);
-}*/

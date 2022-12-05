@@ -6,15 +6,13 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 16:20:27 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/26 15:32:27 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:24:10 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <libft.h>
 #include <stddef.h>
-//#include <stdio.h>
-//#include <string.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -43,11 +41,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (NULL);
 }
-
-//int	main()
-//{
-//	char	*s1 = "aaa";
-//	char	*s2 = "bndghcdyujsk";
-//	char	*tab = ft_strjoin(s1, s2);
-//	printf("%s\n", tab);
-//}

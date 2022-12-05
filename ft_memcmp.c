@@ -6,14 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 15:34:26 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/26 18:20:53 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:16:41 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <libft.h>
 #include <stddef.h>
-#include <stdio.h>
-#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

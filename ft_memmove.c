@@ -6,14 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 19:14:03 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/01 21:05:51 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:17:18 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-//#include <stdlib.h>
-//#include <stdio.h>
-//#include <string.h>
 #include <libft.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
@@ -33,13 +30,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (ft_memcpy(dst, src, len));
 }
-
-//int main()
-//{
-//    //char *str = strdup("Hello World!");
-//	char dst[] = {67, 68, 67, 68, 69, 0, 45};
-//	char dst2[] = {67, 68, 67, 68, 69, 0, 45};
-//    printf("%s\n", (char *)memmove(dst + 1, dst, 2));
-//    printf("%s\n", (char *)ft_memmove(dst2 + 1, dst2, 2));
-//    return 0;
-//}

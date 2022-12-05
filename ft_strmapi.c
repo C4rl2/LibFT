@@ -6,24 +6,13 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 15:59:08 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/28 16:42:59 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:26:52 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stddef.h>
 #include <stdlib.h>
-//#include <string.h>
-//#include <stdio.h>
-
-/*char ft_rot_ez(unsigned int decal, char c) {
-    for (unsigned int i = 0; i < decal; i++) {
-        c++;
-        if (c > 'z')
-            c = 'a';
-    }
-    return (c);
-}*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -46,10 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_s[i] = '\0';
 	return (new_s);
 }
-
-/*int main()
-{
-	char	*str = strdup("ssdfsd");
-	char *tt = ft_strmapi(str, &ft_rot_ez);
-	puts(tt);
-}*/

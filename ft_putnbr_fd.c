@@ -6,11 +6,10 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 15:45:25 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/11/28 15:49:17 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/05 18:18:32 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <libft.h>
 
 void	ft_putnbr_fd(int n, int fd)
