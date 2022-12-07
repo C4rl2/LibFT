@@ -1,6 +1,6 @@
 NAME	= libft.a
 
-SRCS = 	ft_isalpha.c \
+SRCS	=	ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
 		ft_split.c \
@@ -35,7 +35,17 @@ SRCS = 	ft_isalpha.c \
 		ft_strtrim.c \
 		ft_itoa.c \
 
+SRCSBONUS	=	ft_lstnew.c \
+				ft_lstadd_front.c \
+				ft_lstsize.c \
+				ft_lstlast.c \
+				ft_lstadd_back.c \
+				ft_lstdelone.c \
+				ft_lstclear.c \
+				ft_lstiter.c \
+
 OBJS	= $(SRCS:.c=.o)
+OBJSBONUS	= $(SRCSBONUS:.c=.o)
 
 CC	= gcc
 RM	= rm -f
@@ -52,11 +62,14 @@ ${NAME}:	${OBJS}
 all:	${NAME}
 
 clean:
-	${RM} ${OBJS}
+	${RM} ${OBJS} ${OBJSBONUS}
 
 fclean:	clean
 	${RM} ${NAME}
 
 re:	fclean all
 
-.PHONY:	all clean fclean re
+bonus:	$(OBJS) $(OBJSBONUS)
+	${AR} ${NAME} ${OBJS} $(OBJSBONUS)
+
+.PHONY:	all clean fclean re bonus
