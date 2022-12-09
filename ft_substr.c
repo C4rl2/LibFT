@@ -6,11 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:33:00 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/05 18:31:53 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/08 15:31:42 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 #include <stddef.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

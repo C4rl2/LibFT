@@ -6,11 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:38:47 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/05 18:28:47 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/08 15:31:42 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static int	ft_char_in_array(char c, char const *set)
 {

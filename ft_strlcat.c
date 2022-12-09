@@ -6,12 +6,12 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 16:38:07 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/05 18:24:50 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/08 15:31:42 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <libft.h>
+#include "libft.h"
 
 static int	ft_secure(char *dst, const char *src)
 {

@@ -6,12 +6,12 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 16:20:27 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/05 18:24:10 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/08 15:31:42 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <libft.h>
+#include "libft.h"
 #include <stddef.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)

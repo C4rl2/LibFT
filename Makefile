@@ -36,16 +36,21 @@ SRCS	=	ft_isalpha.c \
 		ft_itoa.c \
 
 SRCSBONUS	=	ft_lstnew.c \
-				ft_lstadd_front.c \
-				ft_lstsize.c \
-				ft_lstlast.c \
-				ft_lstadd_back.c \
-				ft_lstdelone.c \
-				ft_lstclear.c \
-				ft_lstiter.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c \
+			ft_lstlast.c \
+			ft_lstadd_back.c \
+			ft_lstdelone.c \
+			ft_lstclear.c \
+			ft_lstiter.c \
 
-OBJS	= $(SRCS:.c=.o)
-OBJSBONUS	= $(SRCSBONUS:.c=.o)
+ifndef WITH_BONUS
+	OBJS = ${SRCS:.c=.o}
+else
+	OBJS = ${SRCSBONUS:.c=.o}
+endif
+
+CLEANBONUS	= $(SRCSBONUS:.c=.o)
 
 CC	= gcc
 RM	= rm -f
@@ -56,20 +61,20 @@ CFLAGS	= -Wall -Wextra -Werror -I.
 .o.c:
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
-${NAME}:	${OBJS}
-	${AR} ${NAME} ${OBJS}
-
 all:	${NAME}
 
+${NAME}:	${OBJS}
+			${AR} ${NAME} ${OBJS}
+
 clean:
-	${RM} ${OBJS} ${OBJSBONUS}
+	${RM} ${OBJS} ${CLEANBONUS}
 
 fclean:	clean
 	${RM} ${NAME}
 
 re:	fclean all
 
-bonus:	$(OBJS) $(OBJSBONUS)
-	${AR} ${NAME} ${OBJS} $(OBJSBONUS)
+bonus:
+	make WITH_BONUS=1 all
 
 .PHONY:	all clean fclean re bonus

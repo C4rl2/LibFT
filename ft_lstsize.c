@@ -6,11 +6,11 @@
 /*   By: cafraixe <cafraixe@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 12:12:33 by cafraixe          #+#    #+#             */
-/*   Updated: 2022/12/07 16:58:44 by cafraixe         ###   ########.fr       */
+/*   Updated: 2022/12/08 17:11:13 by cafraixe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
